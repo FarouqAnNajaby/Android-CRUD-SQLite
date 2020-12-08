@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/blue"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <ImageView
+            android:id="@+id/hapusData"
+            android:layout_width="32dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_baseline_delete_24"
+            android:layout_gravity="right"
+            android:layout_marginRight="16dp"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/isiDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/toolbar"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kode Makanan"
+            android:textSize="12sp"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/kodeMakan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kode"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:enabled="false"
+            android:textSize="18sp"
+            android:layout_marginTop="4dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Makanan"
+            android:textSize="12sp"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/namaMakan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Makanan"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Asal Makanan"
+            android:textSize="12sp"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/asalMakan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Asal Makanan"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bahan Makanan"
+            android:textSize="12sp"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/bahanMakan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bahan Makanan"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Langkah membuat Makanan"
+            android:textSize="12sp"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/caraBuatMakan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cara Membuat Makanan"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="4dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ubah"
+            android:id="@+id/btnUbah"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
